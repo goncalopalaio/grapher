@@ -21,10 +21,10 @@ FLAGS:
 
 OPTIONS:
     -c, --capture <capture_method>     How the numbers will be captured from the regex groups. 
-    "1" to capture the first group as y and use the number lines that matched as x 
-    "-1" to capture the first group as y and use the number lines that matched as y
-    "12" to capture two groups and use the first group as x and the second group as y
-    "21" to capture two groups and use the first group as y and the second group as z
+        "1" to capture the first group as y and use the number lines that matched as x 
+        "-1" to capture the first group as y and use the number lines that matched as y
+        "12" to capture two groups and use the first group as x and the second group as y
+        "21" to capture two groups and use the first group as y and the second group as z
     -r, --regex <regex>                This regex should have 1 or two groups that contain a number. This will be
                                        rendered into the graph. Check the capture option for more details
         --reset_regex <reset_regex>    When a line matches this regex the current graph will be cleared
