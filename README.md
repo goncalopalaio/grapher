@@ -30,8 +30,7 @@ OPTIONS:
                                        and use the first group as y and the second group as z
     -r, --regex <regex>                This regex should have 1 or two groups that contain a number. This will be
                                        rendered into the graph
-        --reset_regex <reset_regex>    This regex should have 1 or two groups that contain a number. This will be
-                                       rendered into the graph
+        --reset_regex <reset_regex>    When a line matches this regex the current graph will be cleared
     -t, --title <window_title>         Title of the window
         --x_min <x_min>                Minimum x coordinate for the graph
         --x_max <xmax>                 Maximum x coordinate for the graph
