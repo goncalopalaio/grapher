@@ -3,13 +3,13 @@ Utility that renders a graph using the lines from a file or log. It reads input 
 
 This is an example how to pipe logcat output (logging utility for android phones) into the program. Should work in other contexts too.
 
-'''
+```
     adb logcat -v time | cargo run --release -- -t "Time per bind" --x_max "1150" -r "time: (\d+)"
-'''
+```
 
 ![](screenshots/capture-2020-07-12.png)
 
-'''
+```
 ➜  grapher git:(master) ✗ cargo run -- --help
     Finished dev [unoptimized + debuginfo] target(s) in 0.09s
      Running `target/debug/grapher --help`
@@ -37,4 +37,4 @@ OPTIONS:
         --x_max <xmax>                 Maximum x coordinate for the graph
         --y_max <ymax>                 Maximum y coordinate for the graph
         --y_min <ymin>                 Minimum y coordinate for the graph
-'''
+```
