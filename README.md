@@ -4,7 +4,7 @@ Utility that renders a graph using the lines from a file or log. It reads input 
 This is an example how to pipe logcat output (logging utility for android phones) into the program. Should work in other contexts too.
 
 ```
-    adb logcat -v time | cargo run --release -- -t "Time per bind" --x_max "1150" -r "time: (\d+)"
+    adb logcat -v time | cargo run --release -- --x_max "1150" -r "time: (\d+)"
 ```
 
 ![](screenshots/capture-2020-07-12.png)
