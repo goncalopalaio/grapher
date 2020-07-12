@@ -16,7 +16,8 @@ use structopt::StructOpt;
 #[structopt(raw(setting = "structopt::clap::AppSettings::AllowNegativeNumbers"))]
 struct Opt {
     #[structopt(short = "r", long = "regex")]
-    /// This regex should have 1 or two groups that contain a number. This will be rendered into the graph
+    /// This regex should have 1 or two groups that contain a number. This will be rendered into the graph.
+    /// Check the capture option for more details
     regex: String,
 	
 	#[structopt(short = "t", long = "title")]
@@ -48,7 +49,7 @@ struct Opt {
     capture_method: Option<String>,
 
     #[structopt(long = "reset_regex")]
-    /// This regex should have 1 or two groups that contain a number. This will be rendered into the graph
+    /// When a line matches this regex the current graph will be cleared
     reset_regex: Option<String>,
 }
 
