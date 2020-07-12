@@ -1,5 +1,5 @@
 # grapher
-Utility that renders a graph using the lines from a file or log. It reads input from stdin
+Utility that renders a graph using the lines from a file or log. It reads input from stdin.
 
 This is an example how to pipe logcat output (logging utility for android phones) into the program. Should work in other contexts too.
 
